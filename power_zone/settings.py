@@ -180,9 +180,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 if 'USE_AWS' in os.environ:
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'power-zone'
-    AWS_S3_REGION_NAME = 'Europe'
-    AWS_ACCESS_KEY_ID = os.environ.get('AKIAULG7Q4EYU4HMVIES')
-    AWS_SECRET_ACCESS_KEY = os.environ.get('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')
+    AWS_S3_REGION_NAME = 'eu-west-1'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
     # Static and media files
