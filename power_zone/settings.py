@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -176,5 +177,5 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'pk_test_51KDH3GIPINVTLFIZuB4knQif93PuA5vX00oFkzhPp1QmzHJvL03bqIk8fakIJeBNATewnGIE41G5BzI0YH4ezbK100q3F4NThg')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', 'sk_test_51KDH3GIPINVTLFIZyR3DYyXH8Kesi6wNLxIkidQfH6peDIvPMISbv5Wf3coRif9XV0lgFCRg4YoaQyKESGgEUg1c00rDBnC5g2')
-STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', 'whsec_VGVJafXeCWtOKS33ah8b5Myi2eKGusja')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', 'whsec_32j3uwH3nLmNDtdLohJ6KxZV1w5DBdMP')
 DEFAULT_FROM_EMAIL = 'powerzone@example.com'
