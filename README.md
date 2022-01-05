@@ -23,7 +23,6 @@ Power Zone is an ecommerce website where users can purchase athleisure clothing 
 * [Technologies](#Technologies)
 * [Testing](#Testing)
     * [Test Strategy](#Test-Strategy)
-    * [Test Results](#Test-Results)
 * [Deployment](#Deployment)
     * [Project Creation](#Project-Creation)
     * [Heroku Deployment](#Deployment-To-Heroku)
