@@ -209,20 +209,14 @@ Implementation:
 Home:<br>
 ![Home](readme_images/wireframes/home.jpg)<br>
 
-Contact:<br>
-![Contact](readme_images/wireframes/contact.jpg)<br>
+Products:<br>
+![Products](readme_images/wireframes/products.jpg)<br>
+
+Edit/Add Product:<br>
+![Edit/Add Product](readme_images/wireframes/edit-product.jpg)<br>
 
 Profile:<br>
 ![User Profile](readme_images/wireframes/profile.jpg)<br>
-
-Edit Profile:<br>
-![Edit Profile](readme_images/wireframes/edit-profile.jpg)<br>
-
-Admin Panel:<br>
-![Admin panel](readme_images/wireframes/admin-panel.jpg)<br>
-
-Chat Rooms:<br>
-![Chat Rooms](readme_images/wireframes/chat-rooms.jpg)<br>
 
 Checkout:<br>
 ![Checkout](readme_images/wireframes/checkout.jpg)<br>
@@ -232,12 +226,6 @@ Checkout Success:<br>
 
 Sign In:<br>
 ![Sign In](readme_images/wireframes/signin.jpg)<br>
-
-Chat Rooms:<br>
-![Sign Out](readme_images/wireframes/signout.jpg)<br>
-
-Terms and Conditions:<br>
-![Terms and Conditions](readme_images/wireframes/terms-and-conditions.jpg)<br>
 
 #### Security 
 
