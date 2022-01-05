@@ -249,43 +249,39 @@ Django allauth was used to set up user registration and built in decorators allo
 ### Design
 
 #### Colour Scheme
-The header and footer background colour is #353535. ![Header & Footer](readme_images/header-footer.png)<br>
-The main content background colour is #1b1b1b. ![Background](readme_images/background.png)<br>
-The heading text and anchor link colour throughout the website is #ff914d. ![Header & Link Text](readme_images/headings.png)<br>
-The main text colour is #eeeee7. ![Main text](readme_images/main-text.png)<br>
+The header and footer background colour is white.<br>
+The main content background is and image of the person the website is made for working out. ![Background](media/homepage_background_cropped.jpg)<br>
+The heading text and anchor link colour throughout the website is black. <br>
+The main text colour is #555555. <br>
 
 #### Typography
-The headings on all pages use the 'Orbitron' font while the 
-rest of the websites content uses the 'Roboto' font.
+The headings on all pages use the 'Lato' font while the 
+rest of the websites content uses the 'Lato' font.
 
 #### Imagery
-Premium users custom profile pictures are added by url and rendered into an image tag. I do not own these images and did not upload them into the site.
+Main image is from the person that the site is created for and then rest of images were taken off of nike.com or fitnessequipmentireland.ie
 
 ### Differences to Design
-The footer content was implemented different to the original design. Wire frames have the Terms of Service in the center above the copyright information. On a mobile this was implemented with the Terms of Service under the copyright and on larger devices, the terms of service is on the right side of the footer.
+The footer ended up being removed as it ruined the flow of the website.
 
-On the profile page, the buttons on the wireframe are side by side on the mobile version but they were implemented to be on their own lines as the 3 buttons do not sit properly side by side as they are too large.
+On the product page the edit/delete buttons were moved up to make them more efficent when editing or removing products.
 
-500 Page image was removed due to an error with images not loading on the 500 error page. Content is displayed with a link to home page though. This bug has been documented in the TESTING.md file. 
 ****
 ## Features
 
 ### Existing Features
 
-Basic chat room functionality.
-Premium subscription features Private Messaging / Gold Chat Rooms / Custom profile images.
-Stripe payments for the premium subscription service.
-Contact form.
-Full allauth authentication for user registrations/logins.
-Small admin panel for contact queries and ease to ban users.
-Admin delete functionality on chat messages.
+* CRUD functionality
+* Create accounts
+* Save information
+* Search menu
+* Hamburger nav-bar on mobile
+
 
 ### Features Left to Implement
-During the next phase of development, the AWS set up will be utilized to allow users to upload custom images to their profile and attaching images via private messaging.
+Form refactoring to allow admins to add male and female categories.
 
-Form refactoring to allow admins to search via name instead of drop down selection. Same for private messaging.
-
-Real time chat functionality will be added in the next development cycle. Currently users need to refresh in order for the chat to update.
+Button to recieve email notifications for future and current deal or new items.
 
 ****
 ## Technologies
@@ -294,76 +290,50 @@ Real time chat functionality will be added in the next development cycle. Curren
 * [CSS](https://en.wikipedia.org/wiki/CSS)
 	* This project uses custom written CSS to style the Website.
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-    * JS was used to load the toasts and to create the Stripe payments. It was also used for the refresh/scroll functionalty on the chatrooms.
+    * JS was used to load the toasts and to create the Stripe payments. It was also used for the refresh/scroll functionalty on the product and bag pages.
 * [Python](https://www.python.org/)
-    * This project was created using Python framework [Django](https://www.djangoproject.com/) following Model-View-Template design and 
-    Object Relational Mapping.
+    * This project was created using Python framework [Django](https://www.djangoproject.com/).
     * Python Modules used (These can be found in the requirements.txt project file):
-        * asgiref==3.3.1
-        * autopep8==1.5.5
-        * boto3==1.16.59
-        * botocore==1.19.59
-        * certifi==2020.12.5
-        * cffi==1.14.4
-        * chardet==4.0.0
-        * cryptography==3.4.4
-        * defusedxml==0.6.0
-        * dj-database-url==0.5.0
-        * Django==3.1.5
-        * django-allauth==0.44.0
-        * django-crispy-forms==1.10.0
-        * django-storages==1.11.1
-        * gunicorn==20.0.4
-        * idna==2.10
-        * jmespath==0.10.0
-        * oauthlib==3.1.0
-        * psycopg2==2.8.6
-        * psycopg2-binary==2.8.6
-        * pycodestyle==2.6.0
-        * pycparser==2.20
-        * PyJWT==2.0.1
-        * python-dateutil==2.8.1
-        * python3-openid==3.2.0
-        * pytz==2020.5
-        * requests==2.25.1
-        * requests-oauthlib==1.3.0
-        * s3transfer==0.3.4
-        * six==1.15.0
-        * sqlparse==0.4.1
-        * stripe==2.55.1
-        * toml==0.10.2
-        * urllib3==1.26.2
+        asgiref==3.4.1
+    boto3==1.20.28
+    botocore==1.23.28
+    dj-database-url==0.5.0
+    Django==3.2.8
+    django-allauth==0.45.0
+    django-countries==7.2.1
+    django-crispy-forms==1.13.0
+    django-storages==1.12.3
+    gunicorn==20.1.0
+    jmespath==0.10.0
+    oauthlib==3.1.1
+    Pillow==8.4.0
+    psycopg2-binary==2.9.3
+    PyJWT==2.2.0
+    python3-openid==3.2.0
+    pytz==2021.3
+    requests-oauthlib==1.3.0
+    s3transfer==0.5.0
+    sqlparse==0.4.2
+    stripe==2.64.0
 
-* [PostgreSQL](https://www.postgresql.org/)
-    * PostgreSQL was used to create the relational databases used as data storage for this project.
 * [Bootstrap](https://getbootstrap.com/)
     * The Bootstrap framework was used through the website for layout and responsiveness.
-* [Google Fonts](https://fonts.google.com/)
-	* Google fonts are used throughout the project to import the *Orbitron* and *Roboto* fonts.
 * [GitHub](https://github.com/)
 	* GithHub is the hosting site used to store the source code for the Website.
 * [Git](https://git-scm.com/)
 	* Git is used as version control software to commit and push code to the GitHub repository where the source code is stored.
 * [Heroku](https://dashboard.heroku.com/apps)
     * Heroku was used to deploy the live website.
-* [TinyJPG](https://tinyjpg.com/)
-	* TinyJPG/TinyPNG is used to reduce the file sizes of images before being deployed to reduce storage and bandwith.
 * [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
 	* Google chromes built in developer tools are used to inspect page elements and help debug issues with the site layout and test different CSS styles.
-* [balsamiq Wireframes](https://balsamiq.com/wireframes/)
-	* This was used to create wireframes for 'The Skeleton Plane' stage of UX design.
-* [Canva](https://www.canva.com/)
-    * Canva design was used in order to create the website logo and custom error images.
-* [Font Awesome](https://fontawesome.com/)
-    * All the Icons displayed throughout the website are Font Awesome icons.
+* [figma Wireframes](https://balsamiq.com/wireframes/)
+	* This was used to create wireframes for 'The Skeleton Plane' stage of UX design..
 * [Favicon](https://favicon.io/)
     * Favicon.io was used to make the site favicon 
 * [Techsini](http://techsini.com/multi-mockup/index.php)
     * Multi Device Website Mockup Generator was used to create the Mock up image in this README.
-* [Visual Studio Code](https://code.visualstudio.com/)
-    * VS Code was my choice IDE used to develop the project.
-* [DbVisualizer](https://www.dbvis.com/)
-    * This was used to create the ER Diagram.
+* [Gitpod](https://code.visualstudio.com/)
+    * Gitpod was my choice IDE used to develop the project.
 * [AWS](https://aws.amazon.com/free/)
     * AWS S3 Bucket was set up to store static files.
 * [Policy Maker](https://policymaker.io/terms-conditions-ready/)
@@ -374,8 +344,7 @@ Real time chat functionality will be added in the next development cycle. Curren
 ### Test Strategy
 #### **Summary**
 Testing is required on all features and user stories documented in this README. 
-All clickable links must redirect to the correct pages. All forms linked to PostgreSQL
-must be tested to ensure they insert all given fields into the correct databases.
+All clickable links must redirect to the correct pages.
 
 HTML Code must pass through the [W3C HTML Validator](https://validator.w3.org/#validate_by_uri).
 
@@ -410,10 +379,7 @@ Full test results can be found [here](TESTING.md)
 ## Deployment
 
 ### Project Creation
-To create this project I used the `git init` command in the terminal from VS Code.
-
-I then used the `git add .` command followed by `git commit -m "Initial commit"` and was then prompted to create a new repository 
-with the choices of public or private.
+To create this project I used the Github along with the Code Institute template.
 
 The following commands were used for version control throughout the project:
 
@@ -440,13 +406,6 @@ The following commands were used for version control throughout the project:
 1. Enter the repository name for the project and click search.
 1. Once the repo has been found, click the connect button.
 
-
-**Add PostgreSQL Database:**
-
-1. Click the resources tab.
-1. Under Add-ons seach for Heroku Postgres and then click on it when it appears.
-1. Select Plan name Hobby Dev - Free and then click Submit Order Form.
-
 **Set environment variables:**
 
 1. Click on the settings tab and then click reveal config vars.
@@ -454,10 +413,10 @@ The following commands were used for version control throughout the project:
     * AWS_ACCESS_KEY_ID
     * AWS_SECRET_ACCESS_KEY
     * DATABASE_URL
+    * DISABLE_COLLECTSTATIC
     * EMAIL_HOST_PASS
     * EMAIL_HOST_USER
     * SECRET_KEY
-    * STRIPE_PRICE_ID
     * STRIPE_PUBLIC_KEY
     * STRIPE_SECRET_KEY
     * STRIPE_WH_SECRET
@@ -471,7 +430,7 @@ The following commands were used for version control throughout the project:
 
 ### Run Locally
 
-1. Navigate to the GitHub [Repository](https://github.com/Daisy-McG/chat_to_the_mat).
+1. Navigate to the GitHub [Repository](https://github.com/dylanocallaghan/MS4).
 1. Click the Code drop down menu.
 1. Either Download the ZIP file, unpackage locally and open with IDE (This route ends here) OR Copy Git URL from the HTTPS dialogue box.
 1. Open your developement editor of choice and open a terminal window in a directory of your choice.
@@ -489,7 +448,7 @@ for your own idea. - Definition from [Github Docs](https://docs.github.com/en/fr
 1. Navigate to the GitHub Repository you want to fork.
 1. On the top right of the page under the header, click the fork button.
     
-    ![Fork](readme_images/fork.jpg)
+    ![Fork](readme_images/fork-a-repo.jpg)
 1. This will create a duplicate of the full project in your GitHub Repository.
 
 ****
@@ -497,12 +456,16 @@ for your own idea. - Definition from [Github Docs](https://docs.github.com/en/fr
 
 ### Code
 
+As my Project was for someone else I created the gym store with the help of a mini-project called "Boutique-Ado" in a Full Stack Framworks module from Code Institute. 
+
 The Stripe payment was coded by following a [tutorial](https://testdriven.io/blog/django-stripe-subscriptions/). This included the python 
 code and the javascript. 
 
-The code for adding 1 year to date on the premium subscription services was found in this [Stack overflow](https://stackoverflow.com/questions/15741618/add-one-year-in-current-date-python/15743908) post.
-
 ### Acknowledgements
 
-I'd like to thank [Sean](https://github.com/nazarja) for his help with figuring out and resolving my redirect function issue on user profiles.
-****
+I'd like to give special thanks to the the following people for their help with my project:
+
+* Helpful tutors who helped me deploy my project on Heroku and connect a real email.
+* Helpful slack users who responded to any queries that I had throughout the project e.g. issues implementing the collapsible menu from materialize.
+* My mentor Spencer for reviewing my project and confirming he was happy with my work.
+* Helpful modules on the Code Institute Software Development course where it help me with a bit of the project coding
