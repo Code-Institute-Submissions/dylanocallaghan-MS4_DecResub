@@ -282,27 +282,27 @@ Button to recieve email notifications for future and current deal or new items.
 * [Python](https://www.python.org/)
     * This project was created using Python framework [Django](https://www.djangoproject.com/).
     * Python Modules used (These can be found in the requirements.txt project file):
-        asgiref==3.4.1
-    boto3==1.20.28
-    botocore==1.23.28
-    dj-database-url==0.5.0
-    Django==3.2.8
-    django-allauth==0.45.0
-    django-countries==7.2.1
-    django-crispy-forms==1.13.0
-    django-storages==1.12.3
-    gunicorn==20.1.0
-    jmespath==0.10.0
-    oauthlib==3.1.1
-    Pillow==8.4.0
-    psycopg2-binary==2.9.3
-    PyJWT==2.2.0
-    python3-openid==3.2.0
-    pytz==2021.3
-    requests-oauthlib==1.3.0
-    s3transfer==0.5.0
-    sqlparse==0.4.2
-    stripe==2.64.0
+        * asgiref==3.4.1
+        * boto3==1.20.28
+        * botocore==1.23.28
+        * dj-database-url==0.5.0
+        * Django==3.2.8
+        * django-allauth==0.45.0
+        * django-countries==7.2.1
+        * django-crispy-forms==1.13.0
+        * django-storages==1.12.3
+        * gunicorn==20.1.0
+        * jmespath==0.10.0
+        * oauthlib==3.1.1
+        * Pillow==8.4.0
+        * psycopg2-binary==2.9.3
+        * PyJWT==2.2.0
+        * python3-openid==3.2.0
+        * pytz==2021.3
+        * requests-oauthlib==1.3.0
+        * s3transfer==0.5.0
+        * sqlparse==0.4.2
+        * stripe==2.64.0
 
 * [Bootstrap](https://getbootstrap.com/)
     * The Bootstrap framework was used through the website for layout and responsiveness.
@@ -358,10 +358,6 @@ Testing is dependent on the website being deployed live on Heroku.
 #### **Out of Scope**
 Only test cases listed under High Level Test Cases will be performed as part of this 
 testing effort.
-
-### Test Results
-
-Full test results can be found [here](TESTING.md)
 
 ****
 ## Deployment
