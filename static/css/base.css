@@ -312,4 +312,8 @@ a.category-badge > span.badge:hover {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
+
+    .col.bg-black.text-white{
+        display: none;
+    }
 }
