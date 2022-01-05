@@ -12,7 +12,11 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import os import path
 import dj_database_url
+
+if path.exists('env.py'):
+    import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -22,10 +26,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-lpj6n+!+59bb-4s2$nf_kxsnkvsnx_9@)_v0u!0v_2f=q&h+5t'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['power-zone.herokuapp.com', 'localhost']
 
@@ -118,7 +122,6 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'power_zone.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
@@ -209,9 +212,9 @@ if 'USE_AWS' in os.environ:
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
-STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'pk_test_51KDH3GIPINVTLFIZuB4knQif93PuA5vX00oFkzhPp1QmzHJvL03bqIk8fakIJeBNATewnGIE41G5BzI0YH4ezbK100q3F4NThg')
-STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', 'sk_test_51KDH3GIPINVTLFIZyR3DYyXH8Kesi6wNLxIkidQfH6peDIvPMISbv5Wf3coRif9XV0lgFCRg4YoaQyKESGgEUg1c00rDBnC5g2')
-STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', 'whsec_32j3uwH3nLmNDtdLohJ6KxZV1w5DBdMP')
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
